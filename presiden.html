@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website INDONESIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="indo.css">
+</head>
+
+<body>
+    <div class="sidebar p-4 bg-" id="sidebar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/INDONESIA_logo.png" class="mb-5 img-fluid"
+            alt="Logo">
+        <li>
+            <a class="text-dark" href="index.html">
+                Sejarah Terbentuknya INDONESIA
+            </a>
+        </li>
+        <li>
+            <a class="text-dark" href="presiden.html">
+                President Indonesia
+            </a>
+        </li>
+        <li>
+            <a class="text-dark" href="wakil.html">
+                Wakil President
+            </a>
+        </li>
+        <li>
+            <a class="text-dark" href="pahlawan.html">
+                Pahlawan Indonesia
+            </a>
+        </li>
+        <li>
+            <a class="text-dark" href="peta.html">
+                Peta Indonesia
+            </a>
+        </li>
+    </div>
+
+    <section class="p-4" id="main-content">
+        <button class="btn btn-Secondary" id="button-toggle">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="rows">
+
+
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h2 style="text-align: center;">
+                        Urutan Ketua Presiden Indonesia
+                    </h2>
+                    <div class="p-2 text-center">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://kompaspedia.kompas.id/wp-content/uploads/2020/02/Soekarno_sq-1-e1585486258865.jpg" alt="" style="max-width: 90%;">
+                            <h4 style="margin-left: 70px; margin-top: 10px;">Soekarno Hatta</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/President_Suharto%2C_1993.jpg" alt="" style="max-width: 60%;">
+                            <h4 style="margin-left: 80px; margin-top: 10px;">Soeharto</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Bacharuddin_Jusuf_Habibie_official_portrait.jpg" alt="" style="max-width: 65%;">
+                            <h4 style="margin-left: 60px; margin-top: 10px;">BJ. Habibie</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/President_Abdurrahman_Wahid_-_Indonesia.jpg" alt="" style="max-width: 60%;">
+                            <h4 style="margin-left: 15px; margin-top: 10px;">Abdurrahman Wahid</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Megawati_Sukarnoputri_official_portrait.jpg" alt="" style="max-width: 60%;">
+                            <h4 style="margin-left: 80px; margin-top: 10px;">Megawati</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Susilo_Bambang_Yudhoyono_2009_official_portrait.png" alt="" style="max-width: 60%; margin-right: 100px;">
+                            <h4 style="margin-left: 110px; margin-top: 10px;">SBY</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Joko_Widodo_2019_official_portrait.jpg/1200px-Joko_Widodo_2019_official_portrait.jpg" alt="" style="max-width: 60%; margin-right: 100px;">
+                            <h4 style="margin-left: 50px; margin-top: 10px;">Jokowi Dodo</h4>
+                        </div>  
+                    </div>
+                    
+                    
+
+    </section>
+    <script>
+        // code apabila button di clik
+        document.getElementById("button-toggle").addEventListener("click", () => {
+            //apabila logo button di clik maka akan menggeser
+            document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+            // when the button-toggle is clicked, it will add/remove the active-main-content class
+            document.getElementById("main-content").classList.toggle("active-main-content");
+        });
+    </script>
+
+</body>
+
+</html>
